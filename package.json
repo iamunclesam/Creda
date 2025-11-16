@@ -1,0 +1,42 @@
+{
+  "name": "whatsapp-crypto-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp AI-powered crypto trading bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch -r dotenv/config index.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@1inch/byte-utils": "^3.1.7",
+    "@1inch/cross-chain-sdk": "^1.1.1",
+    "@debridge-finance/desdk": "^2.0.0-rc.0",
+    "@google/genai": "latest",
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "latest",
+    "canvas": "^3.2.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "jimp": "latest",
+    "link-preview-js": "latest",
+    "mongoose": "latest",
+    "pino": "latest",
+    "qrcode-terminal": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "crypto",
+    "trading",
+    "bot",
+    "ai",
+    "baileys"
+  ],
+  "author": "",
+  "license": "MIT"
+}
