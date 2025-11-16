@@ -1,24 +1,24 @@
-# WhatsApp Crypto Bot
+# WhatsApp IOTA Bot
 
-A Node.js WhatsApp bot powered by Gemini AI for on-ramp and off-ramp crypto transactions directly through WhatsApp.
+A Node.js WhatsApp bot powered by AI for on-ramp and off-ramp transactions on IOTA EVM (ShimmerEVM), directly through WhatsApp.
 
 ## Features
 
-- **Connect Wallet**: Link your Ethereum wallet to the bot
-- **Buy Tokens**: Purchase ETH or Hyperliquid tokens with USD
-- **Send Tokens**: Transfer tokens to other wallet addresses
-- **Withdraw to USD**: Convert crypto to USD and withdraw to your card
+- **Connect Wallet**: Link your IOTA EVM wallet to the bot
+- **Buy Tokens**: Purchase IOTA or IOTA EVM tokens with USD
+- **Send Tokens**: Transfer IOTA EVM tokens to other wallet addresses
+- **Withdraw to USD**: Convert IOTA EVM assets to USD and withdraw
 - **View Transaction History**: Check all your past transactions
 - **Disconnect Wallet**: Safely disconnect your wallet
-- **Check Balance**: View your current ETH and Hyperliquid balances
+- **Check Balance**: View your current IOTA EVM balances
 
 ## Technologies
 
 - **WhatsApp Integration**: Baileys (@whiskeysockets/baileys)
-- **AI Assistant**: Gemini 2.0 Flash Lite (@google/genai)
+- **AI Assistant**: AI assistant integration
 - **Database**: MongoDB
-- **Token Swaps**: 1inch API (ready to integrate)
-- **Blockchain**: Hyperliquid & Ethereum (ready to integrate)
+- **Token Swaps**: IOTA EVM DEX integration (e.g., ShimmerEVM DEX)
+- **Blockchain**: IOTA EVM (ShimmerEVM)
 
 ## Installation
 
@@ -64,9 +64,9 @@ npm start
 
 Once connected, simply message the bot:
 
-- "Connect wallet 0x123..." - Link your wallet
-- "Buy 100 USD of ETH" - Purchase ETH
-- "Send 0.5 ETH to 0x456..." - Transfer tokens
+- "Connect wallet 0x123..." - Link your IOTA EVM wallet
+- "Buy 100 USD of IOTA" - Purchase IOTA
+- "Send 0.5 IOTA to 0x456..." - Transfer IOTA EVM tokens
 - "Withdraw 500 USD" - Off-ramp to USD
 - "Show my transactions" - View history
 - "Disconnect wallet" - Remove wallet connection
@@ -102,16 +102,16 @@ whatsapp-crypto-bot/
 ## Integration Points
 
 ### 1inch API (Token Swaps)
-Integrate in `src/services/cryptoService.js` for real token swaps
+Integrate an IOTA EVM DEX in `src/services/cryptoService.js` for real token swaps (e.g., ShimmerEVM DEX)
 
-### Hyperliquid API (Perpetuals)
-Add support for Hyperliquid trading in `cryptoService.js`
+### IOTA EVM (On-chain)
+Use IOTA EVM (ShimmerEVM) RPC endpoints for on-chain interactions
 
-### Ethereum/Web3
-Use ethers.js to interact with blockchain for real transactions
+### Web3
+Use ethers.js to interact with IOTA EVM for real transactions
 
 ### Payment Processor
-Integrate Stripe or Circle for USD withdrawals in `withdrawToUSD()` function
+Integrate a payment processor for USD withdrawals in `withdrawToUSD()` function
 
 ## Development
 
